@@ -1,0 +1,30 @@
+{
+  "name": "coffeedemo",
+  "version": "1.0.0",
+  "description": "Basic project using NodeJS and Coffee Script",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register -R spec -u bdd -w",
+    "start": "(coffee --compile --output dist --watch src &);node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l3inadz/Coffe-Demo.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Jorman Espinoza <jdaniel.espinoza89@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/l3inadz/Coffe-Demo/issues"
+  },
+  "homepage": "https://github.com/l3inadz/Coffe-Demo#readme",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
